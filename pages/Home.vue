@@ -19,12 +19,11 @@ export default {
   }),
   computed: {
     ...mapFields("holidaySummary", ["holidaySummaryRequest"]),
-    ...mapFields("holidays", ["holidays"]),
+
     ...mapFields("requestHolidays", ["requestHolidays"]),
   },
   mounted() {
     this.$store.dispatch("holidaySummary/getHolidaySummaryRequest")
-    this.$store.dispatch("holidays/getHolidays")
     this.$store.dispatch("requestHolidays/getRequestHolidays")
   }
 }

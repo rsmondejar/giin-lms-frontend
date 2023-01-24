@@ -96,6 +96,18 @@ export default {
           component: resolve(__dirname, "pages/Home.vue"),
           chunkName: "pages/home",
         },
+        {
+          name: "request-holidays",
+          path: "/solicitar-vacaciones",
+          component: resolve(__dirname, "pages/HolidayRequest.vue"),
+          chunkName: "pages/holiday-request",
+        },
+        {
+          name: "festives",
+          path: "/festivos",
+          component: resolve(__dirname, "pages/Festives.vue"),
+          chunkName: "pages/festives",
+        },
       ]
     },
   },

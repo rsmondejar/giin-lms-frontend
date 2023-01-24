@@ -24,6 +24,36 @@
         </v-list-item>
 
         <v-list-item
+          :to="{ name: 'request-holidays' }"
+          router
+          exact
+        >
+          <v-list-item-action>
+            <v-icon>mdi-calendar-plus</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title>
+              Solicitar vacaciones
+            </v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+
+        <v-list-item
+          :to="{ name: 'festives' }"
+          router
+          exact
+        >
+          <v-list-item-action>
+            <v-icon>mdi-calendar-month</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title>
+              Festivos
+            </v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+
+        <v-list-item
           exact
           @click.prevent="logout"
         >
@@ -44,7 +74,7 @@
         {{ title }}
       </v-toolbar-title>
       <v-spacer />
-      <span v-if="$auth.user">{{ $auth.user.name }}</span>
+      <span v-if="$auth.user">{{ $auth.user.name }} <v-icon>mdi-account</v-icon></span>
     </v-app-bar>
     <v-main>
       <v-container>

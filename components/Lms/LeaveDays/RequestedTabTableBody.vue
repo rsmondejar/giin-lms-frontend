@@ -32,12 +32,12 @@ export default {
   },
   data: () => ({
     headers: [
-      // {
-      //   text: 'ID',
-      //   align: 'start',
-      //   sortable: true,
-      //   value: 'id',
-      // },
+      {
+        text: 'ID',
+        align: 'start',
+        sortable: true,
+        value: 'id',
+      },
       { text: 'Comentario', value: 'comment', sortable: true, },
       { text: 'Días', value: 'dates', sortable: false,},
       { text: 'Total días', value: 'total_days', sortable: false,},
